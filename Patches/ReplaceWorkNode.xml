@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAttributeSet">
+        <xpath>/Defs/ThinkTreeDef//li[@Class = "JobGiver_Work"]</xpath>
+        <attribute>Class</attribute>
+        <value>SpatialPriority.JobGiver_Work_Spatial</value>
+    </Operation> 
+
+</Patch>
