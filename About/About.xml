@@ -36,7 +36,7 @@ Performance will vary, depending on how much you use priorities, and how often w
 This mod completely replaces JobGiver_Work, by replacing it in all ThinkTreeDefs. Any mods that rely on patching this class will be incompatible, but at the moment, I’m not aware of any mods that do this (I haven’t looked very hard though).
 
 &lt;size=24&gt;Version&lt;/size&gt;
-This is version 0.3.99, for RimWorld 1.0.2408.
+This is version 0.4.100, for RimWorld 1.0.2408.
 
 </description>
   <supportedVersions>
