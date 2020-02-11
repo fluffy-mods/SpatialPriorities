@@ -11,18 +11,18 @@ And any other mod that relies on altering `JobGiver_Work`, as this mod completel
 # Features
 Pawns follow the priorities you set in the Work tab, but will choose to do jobs in high priority areas (e.g. your medicine crops) before jobs in low priority areas (e.g. the hay fields). You can set priorities with the designator in the "Zone" category of the architect, or with the 1-5 buttons above the game speed indicators. 
 
-In the vanilla game, the priority of jobs is decided by (in order);
-  1) Priority of the work type,
-  2) Left-right order of the work type,
-  3) 'natural' priority of the task (WorkGivers, normally invisible),
-  4) Distance to the target.
+In the vanilla game, the priority of jobs is decided by (in order);  
+  1) Priority of the work type,  
+  2) Left-right order of the work type,  
+  3) 'natural' priority of the task (WorkGivers, normally invisible),  
+  4) Distance to the target.  
 
 This mod changes that to;  
-  1) Priority of the work type (Work Tab support for workgiver level priorities is planned)
-  2) Left-right order of the work type,
-  3) Priority of the target area,
-  4) 'natural' priority of the task,
-  5) Distance to the target.
+  1) Priority of the work type (Work Tab support for workgiver level priorities is planned)  
+  2) Left-right order of the work type,  
+  3) Priority of the target area,  
+  4) 'natural' priority of the task,  
+  5) Distance to the target.  
 
 In other words, we evaluate all workgivers in the same worktype, with the same priority, at the same time. Within this 'batch' of potential jobs, we try to find a job in the area that has the highest priority. 
 
