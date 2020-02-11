@@ -5,9 +5,10 @@ Some spaces are more important than others
 # IMPORTANT
 This mod is a work-in-progress. You may find more bugs than you're used to in my mods. You may find that I have suddenly changed the save format, breaking your save games. You have been warned.
 
-In particular, it is also currently INCOMPATIBLE WITH THESE MODS:
+In particular, it is also currently **INCOMPATIBLE WITH THESE MODS:**
  - Hospitality (visitors will not do work, which is probably fine)
- - Prison Labour (prisoners will not do work, which rather defeats the purpose)
+ - Prison Labour (prisoners will not do work, which rather defeats the purpose)  
+
 And any other mod that relies on altering `JobGiver_Work`, as this mod completely overrides it.
 
 # Features
@@ -18,6 +19,7 @@ In the vanilla game, the priority of jobs is decided by (in order);
   2) Left-right order of the work type,  
   3) 'natural' priority of the task (WorkGivers, normally invisible),  
   4) Distance to the target.  
+
 
 This mod changes that to;  
   1) Priority of the work type (Work Tab support for workgiver level priorities is planned)  
