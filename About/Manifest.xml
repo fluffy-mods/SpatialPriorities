@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
-  <version>0.8.104</version>
-  <manifestUri>https://cdn.jsdelivr.net/gh/FluffierThanThou/SpatialPriorities/About/Manifest.xml</manifestUri>
-  <downloadUri>https://github.com/FluffierThanThou/SpatialPriorities/releases/v0.8.104</downloadUri>
+  <version>0.10.106</version>
+  <manifestUri>https://raw.githubusercontent.com/fluffy-mods/SpatialPriorities/1.1/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/fluffy-mods/SpatialPriorities/releases/v0.10.106</downloadUri>
 </Manifest>

@@ -4,9 +4,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using Harmony;
+using HarmonyLib;
 using RimWorld;
-using UnityEngine;
 using Verse;
 using Verse.AI;
 
@@ -86,8 +85,7 @@ namespace SpatialPriority
                         return false;
                     if ( _cell != IntVec3.Invalid && _cell.IsForbidden( Pawn ) )
                         return false;
-                    if ( !WorkGiver.AllowUnreachable &&
-                         !_map.reachability.CanReach( Pawn.Position, LocalTarget, PathEndMode, TraverseParms ) )
+                    if ( !WorkGiver.AllowUnreachable && !_map.reachability.CanReach( Pawn.Position, LocalTarget, PathEndMode, TraverseParms ) )
                         return false;
                     if ( !HasJob )
                         return false;

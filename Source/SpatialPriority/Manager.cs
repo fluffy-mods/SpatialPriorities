@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Harmony;
-using RimWorld;
+using HarmonyLib;
 using Verse;
 
 namespace SpatialPriority
@@ -24,9 +23,9 @@ namespace SpatialPriority
         {
             // run harmony patches
 #if DEBUG
-            HarmonyInstance.DEBUG = true;
+            Harmony.DEBUG = true;
 #endif
-            var harmony = HarmonyInstance.Create("fluffy.spatialpriority");
+            var harmony = new Harmony("fluffy.spatialpriority");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
 
             // hack in designator

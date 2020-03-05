@@ -39,10 +39,11 @@ Can be safely removed from existing games (although you will get an error when y
 Performance will vary, depending on how much you use priorities, and how often work is done in high priority areeas. I’d love to hear feedback on how it runs in your game.
 
 &lt;size=24&gt;Version&lt;/size&gt;
-This is version 0.9.105, for RimWorld 1.0.2408.
+This is version 0.10.106, for RimWorld 1.1.2564.
 
 </description>
   <supportedVersions>
-    <li>1.0</li>
+    <li>1.1</li>
   </supportedVersions>
+  <packageId>fluffy.spatialpriorities</packageId>
 </ModMetaData>

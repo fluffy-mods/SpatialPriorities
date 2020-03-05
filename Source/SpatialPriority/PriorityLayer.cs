@@ -1,9 +1,6 @@
 ﻿// PriorityLayer.cs
 // Copyright Karel Kroeze, 2018-2018
 
-using System.Collections.Generic;
-using Harmony;
-using RimWorld;
 using UnityEngine;
 using Verse;
 

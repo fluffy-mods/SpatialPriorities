@@ -4,8 +4,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using Harmony;
+using HarmonyLib;
 using RimWorld;
 using Verse;
 using Verse.AI;
@@ -133,7 +132,6 @@ namespace SpatialPriority
                 if ( target != null )
                 {
                     // we found a target!
-                    pawn.mindState.lastGivenWorkType = target.WorkGiver.def.workType;
                     var job = target.Job;
                     if ( job == null )
                     {
@@ -196,16 +194,12 @@ namespace SpatialPriority
         {
             if (emergency && pawn.mindState.priorityWork.IsPrioritized)
             {
-                List<WorkGiverDef> workGiversByPriority = pawn.mindState.priorityWork.WorkType.workGiversByPriority;
-                for (int i = 0; i < workGiversByPriority.Count; i++)
+                WorkGiver worker = pawn.mindState.priorityWork.WorkGiver.Worker;
+                Job job = GiverTryGiveJobPrioritized(pawn, worker, pawn.mindState.priorityWork.Cell);
+                if (job != null)
                 {
-                    WorkGiver worker = workGiversByPriority[i].Worker;
-                    Job job = GiverTryGiveJobPrioritized(pawn, worker, pawn.mindState.priorityWork.Cell);
-                    if (job != null)
-                    {
-                        job.playerForced = true;
-                        return new ThinkResult(job, this, workGiversByPriority[i].tagToGive);
-                    }
+                    job.playerForced = true;
+                    return new ThinkResult(job, this, pawn.mindState.priorityWork.WorkGiver.tagToGive );
                 }
                 pawn.mindState.priorityWork.Clear();
             }
